@@ -1,0 +1,179 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    background-color: #ecf0f3;
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbdddd;
+}
+
+/*Styles for*/
+.time{
+    color: #0b254e;
+    width: 100px;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: -14px;
+    background: transparent;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.date{
+    color: #0b254e;
+    width: 100px;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: -14px;
+    background: transparent;
+    margin-left: 210px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+.calc{
+    border-radius: 28px;
+    box-shadow: 
+    12px 12px 32px rgba(13,39,80,0.25),
+    -10px 10px 15px #fff;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(6,66px);
+    border: 8px solid #dadcdd;
+}
+
+
+
+/*Display screen*/
+input{
+    grid-column: span 6;
+    height: 100px;
+    width: 395px;
+    box-shadow: inset -6px -6px 13px #fff,
+                inset 6px 6px 13px rgba(0,0,0,.16);
+    margin: 0 auto;
+    background: #e8eaec;
+    border: 8px solid #e8eaec;      
+    border-radius: 32px;
+    color: #0b254e;
+    text-align: end;
+    margin: 40px 0px 30px 0px;
+    padding: 20px;
+    font-size: 50px;
+}
+
+/*solar power box*/
+.solar{
+    padding-top: 10px;
+    margin: 5px;
+    border: 8px solid #e8eaec;
+    height: 45px;
+    width: 160px;
+    grid-column-start: span 2;
+    background: #353636;
+    box-shadow: 
+    inset 12px 12px 32px rgba(13,39,80,0.25),
+    inset -10px 10px 15px #4e4d4d;
+}
+
+.digits{
+    padding-right: -10px;
+    margin-top: -20px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+p{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    color:  #0b254e
+   
+}
+
+
+
+/*button secton styles*/
+button{
+    box-shadow: inset 6px 6px 13px #fff,
+                6px 6px 13px rgba(0,0,0,.16);
+    background-color: #ecf0f3;     
+    border: none;       
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0b254e;
+}
+
+button:hover {
+    transform: scale(1.1); /* Increase the scale for a hover effect */
+}
+
+
+/*Create the appearence of a button being pressed*/
+.calculator-button:active {
+    box-shadow: inset 3px 3px 5px #b3b3b3, 
+                inset -3px -3px 5px #ffffff;
+}
+
+
+.special-btn{
+    color:rgb(4, 4, 172);
+}
+
+.root-bnt{
+    font-size: 28px;
+    font-weight: bolder;
+   
+}
+
+.arrow-btn{
+    color: green;
+}
+
+.parenthesis-btn{
+    color: rgb(177, 6, 177);
+}
+
+.operand-btn{
+    color: #ee4c11;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
+/*Special color for `C` button*/
+.colored-C{
+    color: red;
+}
+
+/*Styles for `=` button*/
+.equal{
+    width: 120px; 
+    border-radius: 42px;
+    box-shadow: inset 6px 6px 13px #fff,
+                6px 6px 13px rgba(0,0,0,.16);
+    background-color: #ecf0f3; 
+    color: green; 
+    font-size: 30px; 
+}
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="calc">
+            <!--Time-->
+            <div class="time" id="time"></div>
+            <!--DATE-->
+            <div class="date" id="date"></div>
+
+            <!--Display Input Screen -->
+            <input type="text" id="inputext" placeholder="0">
+            
+            <!-- Buttons section -->
+            
+            <!--Fisrt row -->
+            <div class="solar"></div>
+            <div class="digits">
+                <p>&#9787;&#9786;&#9787; 12 DIGITS DISPLAY</p>
+            </div>
+            <button onclick="calculator.toggleSign()" class="special-btn calculator-button">&#177;</button>
+            <button onclick="calculator.deleteLast()" class="arrow-btn calculator-button">&#10140;</button>
+            <button onclick="calculator.clear()" class="colored-C calculator-button">C</button>
+
+
+            <!-- Second row -->
+
+            <button onclick="calculator.calculate('%')" class="special-btn specialcalculator-button">%</button>
+            <button onclick="calculator.calculate('Math.sqrt')" class="special-btn root-bnt calculator-button">√</button>
+            <button onclick="calculator.calculate('**2')" class="special-btn calculator-button">x²</button>
+            <button onclick="calculator.calculate('**')" class="special-btn calculator-button">x^y</button>
+            <button onclick="calculator.calculate('*3.14')" class="special-btn calculator-button">π</button>
+            <button onclick="calculator.calculate('log10')" class="special-btn calculator-button">log</button>
+
+            <!--Third row -->
+            <button onclick="calculator.calculate('Math.log')" class="special-btn calculator-button">ln</button>
+            <button onclick="calculator.calculate('Math.cos')" class="special-btn calculator-button">cos</button>
+            <button onclick="calculator.calculate('Math.sin')" class="special-btn calculator-button">sin</button>
+            <button onclick="calculator.calculate('Math.tan')" class="special-btn calculator-button">tan</button>
+            <button onclick="calculator.calculate('(')" class="parenthesis-btn calculator-button">(</button>
+            <button onclick="calculator.calculate(')')" class="parenthesis-btn calculator-button">)</button>
+
+            <!-- Fourth row -->
+            <button onclick="calculator.calculate(7)" class="calculator-button">7</button>
+            <button onclick="calculator.calculate(8)" class="calculator-button">8</button>
+            <button onclick="calculator.calculate(9)" class="calculator-button">9</button>
+            <button onclick="calculator.calculate('+')" class="operand-btn calculator-button">+</button>
+            <button onclick="calculator.calculate('-')" class="operand-btn calculator-button">−</button>
+            <button onclick="calculator.calculate('*')" class="operand-btn calculator-button">×</button>
+
+            <!-- Fifth row -->
+            <button onclick="calculator.calculate(4)" class="calculator-button">4</button>
+            <button onclick="calculator.calculate(5)" class="calculator-button">5</button>
+            <button onclick="calculator.calculate(6)" class="calculator-button">6</button>
+            <button onclick="calculator.calculate('00')" class="calculator-button">00</button>
+            <button onclick="calculator.calculate('.')" class="operand-btn calculator-button">.</button>
+            <button onclick="calculator.calculate('/')" class="operand-btn calculator-button">÷</button>
+
+
+            <!-- Sixth row -->
+            <button onclick="calculator.calculate(1)" class="calculator-button">1</button>
+            <button onclick="calculator.calculate(2)" class="calculator-button">2</button>
+            <button onclick="calculator.calculate(3)" class="calculator-button">3</button>
+            <button onclick="calculator.calculate(0)" class="calculator-button">0</button>
+            <button onclick="calculator.calculateResult()" class="equal calculator-button">=</button>
+
+
+            <!-- Audio element for keyboard sound -->
+            <audio id="keySound" src="keyboard.mp3"></audio>
+
+
+            <script src="calculator.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

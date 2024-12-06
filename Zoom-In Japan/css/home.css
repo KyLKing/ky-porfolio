@@ -1,0 +1,548 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html, body {
+    height:100%;
+	font-size: 16px;
+    font-family:'Josefin Sans', sans-serif;
+    background-color: lightgray;
+    color: black;
+    padding:0;
+    margin:0;
+}
+
+header {
+    background-color: white; 
+    padding: 0;
+    width: 100%;
+}
+div#headerLogo {
+    margin-top: 75px;
+	padding: 15px;
+    font-size: 1.2em;
+    font-weight: 800;
+	margin-bottom: 0;
+	background-color: whitesmoke;
+}
+div#headerLogo img {
+    float: left;
+} 
+div#headerLogo a:link{
+    padding: 20px 80px 20px;
+    text-decoration: none;
+}
+#headerLogo  p {
+    color: rgb(53, 52, 52);
+    margin-left: 30px;
+}
+div#quote p {
+   text-align: center;
+	margin-bottom: 0;
+	font-size: 1.1em;
+}
+#headerLogo> img> p a:hover { color: red;}
+
+
+/*----------------------NAV BAR---------------------------*/
+nav.menu {
+    background-color: black;
+    width: 100%;
+    left: 0;
+    padding:0;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+nav.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+nav.menu ul li {
+    margin: 20px;
+    padding: 10px;
+}
+nav.menu ul li a {
+    text-decoration: none;
+    color: snow;
+	font-weight: 800;
+}
+nav.menu ul li  a:hover {
+    color: tomato;
+}
+
+nav li#home a {
+    background-color: black;
+    color: orangered;
+    border: 2px solid #eb1a1d;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+nav ul li#home a:hover {
+    color: red;
+    background-color: #e2dfe0;
+}
+/*---------------------Drop down nav -----------------*/
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e2dfe0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a.section {
+    color: rgb(26, 25, 25);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn a.selected {color: tomato;}
+  
+/*--------------- for all sources links ----------- */
+
+.source {
+	color: red;
+	text-decoration-color: black;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+.source a:hover {
+	color: orange;
+}
+
+
+
+#food, #whereTo, #otherStuff  {
+   background-color: darkgray;
+}
+
+ div.menu > h1 {
+    background-color: darkgray;
+    color:#db1c1c;
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 10px 10px 7px rgb(65, 64, 64);
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    box-shadow: 10px 10px 6px rgb(65, 64, 64);
+}
+.flex {
+    background-color: transparent;
+    padding: 5px;
+    height: 425px;
+    width: 100%;
+    color:rgb(236, 229, 229); 
+	border-radius: 10px;
+	justify-content: space-between;
+    z-index: 2;
+}
+.title a {
+    text-shadow: 0 0 3px rgb(7, 7, 7);   
+    text-decoration: none;
+    color: red;
+    text-shadow: 0 0 3px rgb(8, 8, 8);
+    font-size: 1.7em;
+}
+.title a:hover {
+    color: rgb(233, 224, 224);
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight,
+ .nine, .ten, .eleven, .twelves, .thriteen, .fourteen,
+  .fifteen, .sixteen, .seventeen, .eighteen {
+    background-repeat: no-repeat;
+    background-size: 225px 435px;
+	border: 2px solid white;
+}
+.flex div a:hover {
+    color: rgb(14, 8, 8);
+    background-color: white;
+}
+.one {
+    background-image: url("../images/sushi3_rotate.jpg");
+}
+.two {
+    background-image: url("../images/fugu_japan2.jpg");
+}
+.three { 
+    background-image: url("../images/Ramen.jpg");
+}
+.four {
+    background-image: url("../images/ohagi2.jpg");
+}
+.five {
+    background-image: url("../images/okonomiyaki4.jpg");
+}
+.six {
+    background-image: url("../images/wagashi2.jpg");
+}
+
+.seven {
+    background-image: url("../images/shrine2_re.jpg");
+}
+.eight {
+    background-image: url("../images/temple4_re.jpg");
+}
+.nine {
+    background-image: url("../images/castle4.jpg");
+}  
+.ten {
+    background-image: url("../images/onsen3_re.jpg");
+} 
+.eleven {
+    background-image: url("../images/samurai6_re.jpg");
+}
+.twelves {
+    background-image: url("../images/paddyfield.jpg");
+}
+.thirteen {
+	background-image: url("../images/kimono10-re.jpg");
+} 
+.fourteen {
+	background-image: url("../images/Hiden_Senbazuru_Orikata.jpg");
+}
+.fifteen {
+	background-image: url("../images/totoro-re.png");
+}
+.sixteen {
+	background-image: url("../images/kendo3-re.jpg");
+}
+.seventeen {
+	background-image: url("../images/Japanese-beer-re.jpg");
+}
+.eighteen {
+	background-image: url("../images/cute-vending-re.jpg");
+}
+.link {
+	text-decoration-color:black;
+	color: red;
+	font-size: 1.5em;
+}
+
+.place > a{
+	text-decoration: none;
+	color: red;
+}
+
+h2 > a {
+    color: tomato;
+    text-decoration: none;
+}
+#sushi, #fugu, #noodles, #street, #soul, #sweets, #shrines, #temples,
+ #castles, #attractions, #onsen, #tanada, #kimono, #origami,
+  #animation, #martial, #drinks, #vending {
+	display: block;
+	background-color: white;
+	border-left: 10px solid red;
+	color: tomato;
+	padding: 15px 60px;
+	margin: 80px;
+	color: black;
+	line-height: 1.7;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+}
+
+article .place {
+	color: tomato;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-between center;
+	align-items: stretch;
+  }
+.card {
+    flex: 0 0 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 15px 0px black;
+	background-color: whitesmoke;
+	border-radius: .25rem;
+	align-self: center;
+    z-index: 2;
+  } 
+.card img {
+    max-width: 100%;
+  }
+	
+.card .text {
+    padding: 0 20px 20px;
+	line-height: 1.5;
+	overflow: auto;
+	width: 100%;
+	height: 180px;
+	font-size: 20px;
+}
+	
+.card .text > h3 {
+	color: #f02d30;
+}
+.card .text > .enlarge a {
+	font-size: 1em;
+	text-decoration: none; 
+    position: sticky;
+    color:rgb(26, 25, 25);
+}
+.card .text .enlarge a:link {
+	color: #be0f0f;
+}
+
+.card .text .enlarge a:visited {
+	color: #F58355;
+}
+
+
+/*-------------------------CONTACT-------------------------*/
+
+* {box-sizing: border-box;}
+
+#contact {
+	background-color: white;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  resize: vertical;
+  font-size: 1.2em;
+}
+label {
+	font-size: 1.4em;
+}
+input[type=submit] {
+  background-color: black;
+  color: tomato;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+  color: white;
+}
+
+.container {
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 20px;
+  margin: 80px;
+  color: tomato;
+  border: 2px solid darkgray;;	
+}
+
+#form {
+	color: tomato;
+	text-align: center;
+	background-color: lightgray;
+	padding: 30px;
+}
+
+
+/*------------------TOP, BOTTOM BUTTON------------------------- */
+
+#myBtn {
+  position: sticky;
+  width: 50px;
+  bottom: 315px;	
+  left: 1300px;
+  z-index: 1;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f02d30;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+#myBtn > a, #myBtn2 >a {
+	text-decoration: none;
+	color:white;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+#myBtn2 {
+  position: sticky;
+   width: 70px;
+  bottom: 260px;
+  left: 1300px;	
+  z-index: 1;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  color: red;
+}
+#myBtn2:hover {
+	background-color: orangered;}
+
+
+
+/* ---------------------------HERO IMAGE----------------------------- */
+
+
+#hero {
+    background-image: url("../images/japan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:140vh;
+    margin:0;
+    font-size: 23px;
+    position: relative;
+}
+   
+#hero .heroChild {
+    position: sticky;
+    color: white;
+    left: 80px;
+    top: 300px;
+    letter-spacing: 10px;
+	font-size: 2em;
+	background: rgba(0,0,0,0.5);
+    margin-right: 900px;
+    margin-left: 40px;
+}
+p.heroChild {
+    margin-top: 0;
+}
+#helpful p {
+    color: rgb(250, 245, 245);
+}
+
+/*----------------------- FOOTER ----------------------- */
+
+footer {
+    background-color: black;
+}
+.map_background {
+    background-color: black;
+}
+.map {
+    display: flex;
+    align-items: flex-start;
+    background: black;
+    padding: 2em;
+    align-items: center;
+    border-radius: 3px;
+    max-width: 24em;
+    color:rgb(224, 223, 223);
+    text-align: center;
+}
+#map_img {
+    margin-left: 3em;
+    order: 1;
+    width: 100%;
+    box-shadow: 2px 2px 15px 0px lightgray;
+    border-radius: 6px;
+}
+.map_body {
+    flex: 1;
+}
+.map_heading {
+    margin: 100px 100px 0px;
+    color:rgb(204, 201, 201);
+}
+#map_paragraph {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+p:first-of-type b i {
+    color: rgb(223, 58, 58);
+}
+#map_enlarge {
+    font-size: 1.3em;
+    text-decoration-color: rgb(240, 57, 57);
+    color: rgb(197, 193, 193);
+}
+
+#map_enlarge:hover {
+    color: rgb(204, 23, 23);
+}
+
+#copy {
+    color: #e65b5d;
+    background-color: black;
+    padding: 10px;
+}
+    
+div#helpful {
+    color:rgb(204, 201, 201);
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 5px;
+}
+div#helpful {
+    margin: 0;
+}
+div#helpful p {
+    display: inline-block;
+    border: 2px solid #f02d30;
+    padding: 10px 12px;
+}
+
+div.websites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+.websites_address {
+    margin: 20px;
+    padding: 10px;
+    flex: 1;
+}
+
+.websites .heritage a {
+    border: 2px solid saddlebrown;
+    background-color: bisque; 
+    color: saddlebrown;
+}
+.websites .heritage a:hover{
+    color: saddlebrown;
+    background-color: bisque;
+}
